@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Akay Blog</title>
+    <link rel="stylesheet" href="z-menu.css">
+    <link rel="stylesheet" href="z-header.css">
+    <link rel="stylesheet" href="z-footer.css">
+    <link rel="stylesheet" href="1main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<header>
+    <button class="menuBtn" onclick="openMenu()">☰ </button>
+    <div id="sideMenu" class="sideMenu">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeMenu()">×</a>
+        <a href="entry.html">Giriş Yap</a>
+        <a href="#" class="admin-link" onclick="handleAdminAccess()">🔑 Admin Paneli</a>
+        <a href="x">İnstagram</a>
+        <a href="x">Twitter</a>
+        <a href="x">Linkedin</a>
+    </div>
+
+    <div id="adminModal" class="admin-overlay">
+    <div class="admin-window">
+        <span class="close-btn" onclick="closeAdmin()">&times;</span>
+        <h2><i class="fas fa-shield-alt"></i> Admin Kontrol Merkezi</h2>
+        <div class="stat-box">
+            Gelen Toplam Mesaj: <strong id="msgCount">0</strong>
+        </div>
+        <div id="inboxList">
+            </div>
+    </div>
+    </div>
+
+    <div class="logo"><strong>AKAY BLOG</strong></div>
+    <nav>
+        <ul>
+            <li><a href="#mainpage">Anasayfa</a></li>
+            <li><a href="2europe.html">Avrupa</a></li>
+            <li><a href="asia.html">Asya</a></li>
+            <li><a href="africa.html">Afrika</a></li>
+            <li><a href="america.html">Amerika</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+</header>
+<body>
+    <div class="hero" id="mainpage">
+        <p>Dünya Turu Rehberi</p>
+        <p>Tüm Ülkelerin Pratik Bilgileri</p>
+        <button id="herobutton"><a href="#home2">Yola Çıkalım</a></button>
+        
+    </div>
+
+    <section class="information" id="home2">
+        <h2 class="sectiontitle">Hakkımızda</h2>
+        <div id="informationimage">
+            <img src="https://www.akaygrup.com.tr/images/photo_9979.JPG">
+            <p>2012 Yılından Beri Dünyayı Gezen Ve Bu Bilgi Birikimimizi Sizlere Aktarmak İsteyen Bir Kuruluşusuz</p>
+        </div>
+   
+    </section>
+
+<section id="contact" class="contact">
+    <h2 class="contactitle">Bize Ulaşın</h2>
+    <form onsubmit="return handleFormSubmit(event)">
+        <input type="text" id="userName" placeholder="Adınız"required>
+        <input type="email" id="userEmail" placeholder="Email" required>
+        <textarea id="userMessage" rows="5" placeholder="Mesajınız" required></textarea>
+        <button type="submit">Gönder</button>
+    </form>
+</section>
+
+
+    
+    
+    
+    <section class="footerpage" style="background:linear-gradient(120deg,#6f5500,#ffff0e);">
+    <hr>
+        <div class="fotterinformation">
+            <ul>
+                <li class="fotterhead">Akay Blog</li>
+                <li class="fotterp">Sosyal Medyada Bizi Takip Edin</li>
+                <li>
+                    <div class="socialicons">
+                        <a href="https://www.instagram.com/akay.kravchenko/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                 </li>
+            </ul>
+         </div>
+<hr>
+</section>    
+    
+
+
+<script src="script.js"></script>
+</body>

@@ -1,0 +1,117 @@
+.hero{
+    width: 100%; height: 100vh; 
+    background: url('https://www.mapfre.com.tr/blog/media/2019/09/az-butceyle-dunyayi-gezmek.jpg') center/cover;
+     position: relative; 
+     display: flex; 
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     flex-direction: column;
+ 
+}
+
+ 
+
+.hero p{
+   max-width:600px;
+   margin-bottom:30px;
+   font-size:20px;
+   color: white;
+   
+   
+}
+
+.hero button{
+   padding:14px 28px;
+   border:none;
+   background:rgb(255, 255, 255);
+   color:#000000;
+   font-weight:600;
+   border-radius:6px;
+   cursor:pointer;
+   transition:0.3s;
+   
+   
+   
+}
+
+.hero button:hover{
+    transform:scale(1.05);
+}
+#informationimage{
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    gap: 30px;  
+}
+
+#informationimage img{
+    width: 720px;
+    border-radius: 10px;
+    box-shadow: 10px;
+}
+
+#informationimage p{
+    max-width: 400px;
+    font-size: 18px;
+}  
+   
+/*tüm başlıklar*/
+section{
+    padding:100px 10%;
+}
+.sectiontitle{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+    color:#000000;
+}
+    .counters{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    background:linear-gradient(120deg,#6f5500,#ffff0e);
+    padding:60px 10%;
+}
+
+.counter-box{
+    text-align:center;
+    margin:20px;
+}
+
+.counter-box h2{
+    font-size:50px;
+}
+
+/*mainhtml contact*/
+.contactitle{
+    text-align: center;
+    padding: 10px;
+}
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:600px;
+    margin:auto;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea{
+    padding:14px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.contact button{
+    padding:14px;
+    border:none;
+    background:#8b7b01;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+        
